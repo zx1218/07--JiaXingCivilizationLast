@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7BAA5D61D1A5526005BDFC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5D51D1A5526005BDFC4 /* main.m */; };
+		E7BAA5D91D1A5526005BDFC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5D81D1A5526005BDFC4 /* AppDelegate.m */; };
+		E7BAA5DC1D1A5526005BDFC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5DB1D1A5526005BDFC4 /* ViewController.m */; };
+		E7BAA5DF1D1A5526005BDFC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7BAA5DD1D1A5526005BDFC4 /* Main.storyboard */; };
+		E7BAA5E21D1A5526005BDFC4 /* _7__JiaXingCivilization.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5E01D1A5526005BDFC4 /* _7__JiaXingCivilization.xcdatamodeld */; };
+		E7BAA5E41D1A5526005BDFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BAA5E31D1A5526005BDFC4 /* Assets.xcassets */; };
+		E7BAA5E71D1A5526005BDFC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7BAA5E51D1A5526005BDFC4 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E7BAA5D11D1A5526005BDFC4 /* 07--JiaXingCivilization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "07--JiaXingCivilization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7BAA5D51D1A5526005BDFC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E7BAA5D71D1A5526005BDFC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E7BAA5D81D1A5526005BDFC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E7BAA5DA1D1A5526005BDFC4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E7BAA5DB1D1A5526005BDFC4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E7BAA5DE1D1A5526005BDFC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E7BAA5E11D1A5526005BDFC4 /* _7__JiaXingCivilization.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _7__JiaXingCivilization.xcdatamodel; sourceTree = "<group>"; };
+		E7BAA5E31D1A5526005BDFC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7BAA5E61D1A5526005BDFC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E7BAA5E81D1A5526005BDFC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7BAA5CE1D1A5526005BDFC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7BAA5C81D1A5526005BDFC4 = {
+			isa = PBXGroup;
+			children = (
+				E7BAA5D31D1A5526005BDFC4 /* 07--JiaXingCivilization */,
+				E7BAA5D21D1A5526005BDFC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7BAA5D21D1A5526005BDFC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA5D11D1A5526005BDFC4 /* 07--JiaXingCivilization.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7BAA5D31D1A5526005BDFC4 /* 07--JiaXingCivilization */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA5D71D1A5526005BDFC4 /* AppDelegate.h */,
+				E7BAA5D81D1A5526005BDFC4 /* AppDelegate.m */,
+				E7BAA5DA1D1A5526005BDFC4 /* ViewController.h */,
+				E7BAA5DB1D1A5526005BDFC4 /* ViewController.m */,
+				E7BAA5DD1D1A5526005BDFC4 /* Main.storyboard */,
+				E7BAA5E31D1A5526005BDFC4 /* Assets.xcassets */,
+				E7BAA5E51D1A5526005BDFC4 /* LaunchScreen.storyboard */,
+				E7BAA5E81D1A5526005BDFC4 /* Info.plist */,
+				E7BAA5E01D1A5526005BDFC4 /* _7__JiaXingCivilization.xcdatamodeld */,
+				E7BAA5D41D1A5526005BDFC4 /* Supporting Files */,
+			);
+			path = "07--JiaXingCivilization";
+			sourceTree = "<group>";
+		};
+		E7BAA5D41D1A5526005BDFC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA5D51D1A5526005BDFC4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7BAA5D01D1A5526005BDFC4 /* 07--JiaXingCivilization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7BAA5EB1D1A5526005BDFC4 /* Build configuration list for PBXNativeTarget "07--JiaXingCivilization" */;
+			buildPhases = (
+				E7BAA5CD1D1A5526005BDFC4 /* Sources */,
+				E7BAA5CE1D1A5526005BDFC4 /* Frameworks */,
+				E7BAA5CF1D1A5526005BDFC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "07--JiaXingCivilization";
+			productName = "07--JiaXingCivilization";
+			productReference = E7BAA5D11D1A5526005BDFC4 /* 07--JiaXingCivilization.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7BAA5C91D1A5526005BDFC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = NSObject;
+				TargetAttributes = {
+					E7BAA5D01D1A5526005BDFC4 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = E7BAA5CC1D1A5526005BDFC4 /* Build configuration list for PBXProject "07--JiaXingCivilization" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7BAA5C81D1A5526005BDFC4;
+			productRefGroup = E7BAA5D21D1A5526005BDFC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7BAA5D01D1A5526005BDFC4 /* 07--JiaXingCivilization */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7BAA5CF1D1A5526005BDFC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7BAA5E71D1A5526005BDFC4 /* LaunchScreen.storyboard in Resources */,
+				E7BAA5E41D1A5526005BDFC4 /* Assets.xcassets in Resources */,
+				E7BAA5DF1D1A5526005BDFC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7BAA5CD1D1A5526005BDFC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7BAA5DC1D1A5526005BDFC4 /* ViewController.m in Sources */,
+				E7BAA5D91D1A5526005BDFC4 /* AppDelegate.m in Sources */,
+				E7BAA5D61D1A5526005BDFC4 /* main.m in Sources */,
+				E7BAA5E21D1A5526005BDFC4 /* _7__JiaXingCivilization.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E7BAA5DD1D1A5526005BDFC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7BAA5DE1D1A5526005BDFC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E7BAA5E51D1A5526005BDFC4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7BAA5E61D1A5526005BDFC4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7BAA5E91D1A5526005BDFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E7BAA5EA1D1A5526005BDFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7BAA5EC1D1A5526005BDFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "07--JiaXingCivilization/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Destiny.-7--JiaXingCivilization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E7BAA5ED1D1A5526005BDFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "07--JiaXingCivilization/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Destiny.-7--JiaXingCivilization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7BAA5CC1D1A5526005BDFC4 /* Build configuration list for PBXProject "07--JiaXingCivilization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7BAA5E91D1A5526005BDFC4 /* Debug */,
+				E7BAA5EA1D1A5526005BDFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7BAA5EB1D1A5526005BDFC4 /* Build configuration list for PBXNativeTarget "07--JiaXingCivilization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7BAA5EC1D1A5526005BDFC4 /* Debug */,
+				E7BAA5ED1D1A5526005BDFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E7BAA5E01D1A5526005BDFC4 /* _7__JiaXingCivilization.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E7BAA5E11D1A5526005BDFC4 /* _7__JiaXingCivilization.xcdatamodel */,
+			);
+			currentVersion = E7BAA5E11D1A5526005BDFC4 /* _7__JiaXingCivilization.xcdatamodel */;
+			path = _7__JiaXingCivilization.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E7BAA5C91D1A5526005BDFC4 /* Project object */;
+}

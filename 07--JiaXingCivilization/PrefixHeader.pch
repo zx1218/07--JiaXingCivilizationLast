@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  07--JiaXingCivilization
+//
+//  Created by dc007 on 16/6/22.
+//  Copyright © 2016年 NSObject. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "AFNetworking.h"
+#import "SDCycleScrollView.h"
+#import "UIKit+AFNetworking.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "YSLContainerViewController.h"
+
+#define HTTP @"http://jxwm.gkmm.net:8989/news"
+#define HTTP_getBanner [HTTP stringByAppendingString:@"/news/getNewsByCategoryId.do"]
+#define HTTP_getHeaderData [HTTP stringByAppendingString:@"/newsCategory/getBanner.do"]
+#define HTTP_getTitles [HTTP stringByAppendingString:@"/newsCategory/getNewsCategory.do"]
+
+#define SCREEN_BOUNDS [UIScreen mainScreen].bounds
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define GetTitlesDataNotification @"获取News数据"
+#define GetNewsDataNotification @"获取News数据"
+#define GetBannerDataNotification @"获取Banner数据"
+
+#endif /* PrefixHeader_pch */

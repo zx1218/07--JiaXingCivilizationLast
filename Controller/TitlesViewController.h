@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TitlesViewController.h
 //  07--JiaXingCivilization
 //
 //  Created by dc007 on 16/6/22.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TitlesViewController : UIViewController
 
 @end
-

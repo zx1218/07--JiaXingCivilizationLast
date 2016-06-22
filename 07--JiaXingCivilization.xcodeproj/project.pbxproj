@@ -10,12 +10,12 @@
 		31C3001CA1CE19EAA34853C1 /* libPods-07--JiaXingCivilization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B716FBBB057ABAB7639BB8 /* libPods-07--JiaXingCivilization.a */; };
 		E74100EB1D1A67CD00513ADA /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = E74100EA1D1A67CD00513ADA /* News.m */; };
 		E74100EE1D1A67E200513ADA /* Banner.m in Sources */ = {isa = PBXBuildFile; fileRef = E74100ED1D1A67E200513ADA /* Banner.m */; };
-		E74100F11D1A67F500513ADA /* Titles.m in Sources */ = {isa = PBXBuildFile; fileRef = E74100F01D1A67F500513ADA /* Titles.m */; };
 		E74100F61D1A692200513ADA /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E74100F41D1A692200513ADA /* NewsTableViewCell.m */; };
 		E74100F71D1A692200513ADA /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74100F51D1A692200513ADA /* NewsTableViewCell.xib */; };
 		E74100FE1D1A944C00513ADA /* ProfoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74100FD1D1A944C00513ADA /* ProfoundViewController.m */; };
 		E74101011D1A947400513ADA /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74101001D1A947400513ADA /* CommonViewController.m */; };
 		E74101041D1A949900513ADA /* CivilizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74101031D1A949900513ADA /* CivilizationViewController.m */; };
+		E74101371D1AB72000513ADA /* Details.m in Sources */ = {isa = PBXBuildFile; fileRef = E74101361D1AB72000513ADA /* Details.m */; };
 		E7BAA5D61D1A5526005BDFC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5D51D1A5526005BDFC4 /* main.m */; };
 		E7BAA5D91D1A5526005BDFC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5D81D1A5526005BDFC4 /* AppDelegate.m */; };
 		E7BAA5DF1D1A5526005BDFC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7BAA5DD1D1A5526005BDFC4 /* Main.storyboard */; };
@@ -36,8 +36,6 @@
 		E74100EA1D1A67CD00513ADA /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = News.m; path = Models/News.m; sourceTree = "<group>"; };
 		E74100EC1D1A67E200513ADA /* Banner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Banner.h; path = Models/Banner.h; sourceTree = "<group>"; };
 		E74100ED1D1A67E200513ADA /* Banner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Banner.m; path = Models/Banner.m; sourceTree = "<group>"; };
-		E74100EF1D1A67F500513ADA /* Titles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Titles.h; path = Models/Titles.h; sourceTree = "<group>"; };
-		E74100F01D1A67F500513ADA /* Titles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Titles.m; path = Models/Titles.m; sourceTree = "<group>"; };
 		E74100F31D1A692200513ADA /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsTableViewCell.h; path = View/NewsTableViewCell.h; sourceTree = "<group>"; };
 		E74100F41D1A692200513ADA /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsTableViewCell.m; path = View/NewsTableViewCell.m; sourceTree = "<group>"; };
 		E74100F51D1A692200513ADA /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewsTableViewCell.xib; path = View/NewsTableViewCell.xib; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		E74101001D1A947400513ADA /* CommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonViewController.m; path = Controller/CommonViewController.m; sourceTree = "<group>"; };
 		E74101021D1A949900513ADA /* CivilizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CivilizationViewController.h; path = Controller/CivilizationViewController.h; sourceTree = "<group>"; };
 		E74101031D1A949900513ADA /* CivilizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CivilizationViewController.m; path = Controller/CivilizationViewController.m; sourceTree = "<group>"; };
+		E74101351D1AB72000513ADA /* Details.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Details.h; path = Models/Details.h; sourceTree = "<group>"; };
+		E74101361D1AB72000513ADA /* Details.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Details.m; path = Models/Details.m; sourceTree = "<group>"; };
 		E7BAA5D11D1A5526005BDFC4 /* 07--JiaXingCivilization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "07--JiaXingCivilization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BAA5D51D1A5526005BDFC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E7BAA5D71D1A5526005BDFC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -206,8 +206,8 @@
 				E74100EA1D1A67CD00513ADA /* News.m */,
 				E74100EC1D1A67E200513ADA /* Banner.h */,
 				E74100ED1D1A67E200513ADA /* Banner.m */,
-				E74100EF1D1A67F500513ADA /* Titles.h */,
-				E74100F01D1A67F500513ADA /* Titles.m */,
+				E74101351D1AB72000513ADA /* Details.h */,
+				E74101361D1AB72000513ADA /* Details.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -335,7 +335,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7BAA5F41D1A5B86005BDFC4 /* TitlesViewController.m in Sources */,
-				E74100F11D1A67F500513ADA /* Titles.m in Sources */,
 				E7BAA5D91D1A5526005BDFC4 /* AppDelegate.m in Sources */,
 				E7BAA5F11D1A5AF7005BDFC4 /* NewsViewController.m in Sources */,
 				E7BAA5F71D1A5BB1005BDFC4 /* DetailsViewController.m in Sources */,
@@ -347,6 +346,7 @@
 				E7BAA5E21D1A5526005BDFC4 /* _7__JiaXingCivilization.xcdatamodeld in Sources */,
 				E74101041D1A949900513ADA /* CivilizationViewController.m in Sources */,
 				E74100FE1D1A944C00513ADA /* ProfoundViewController.m in Sources */,
+				E74101371D1AB72000513ADA /* Details.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

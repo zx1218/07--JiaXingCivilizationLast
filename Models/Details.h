@@ -1,5 +1,5 @@
 //
-//  Titles.h
+//  Details.h
 //  07--JiaXingCivilization
 //
 //  Created by dc007 on 16/6/22.
@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Titles : NSObject
-@property(nonatomic,strong)NSString *categoryName;
--(void)getTitlesData;
-+(void)getTitlesData;
+@interface Details : NSObject
+
 @end

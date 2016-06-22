@@ -17,7 +17,7 @@
     AFHTTPSessionManager *manager=[AFHTTPSessionManager manager];
     NSDictionary *dict=@{
                          @"categoryId":@1,
-                         @"pageNum":@(++pageNum)
+                         @"pageNum":@(pageNum)
                          };
     
     manager.requestSerializer=[AFJSONRequestSerializer serializer];

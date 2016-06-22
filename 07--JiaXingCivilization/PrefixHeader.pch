@@ -15,6 +15,7 @@
 #import "MJRefresh.h"
 #import "MJExtension.h"
 #import "YSLContainerViewController.h"
+#import "Masonry.h"
 
 #define HTTP @"http://jxwm.gkmm.net:8989/news"
 #define HTTP_getBanner [HTTP stringByAppendingString:@"/news/getNewsByCategoryId.do"]

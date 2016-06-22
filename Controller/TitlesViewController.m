@@ -8,11 +8,9 @@
 
 #import "TitlesViewController.h"
 #import "NewsViewController.h"
-#import "Titles.h"
-@interface TitlesViewController ()<YSLContainerViewControllerDelegate>
+
+@interface TitlesViewController ()
 @property(nonatomic,strong)NSArray *titlesArr;
-@property(nonatomic,strong)NSMutableArray *mutableArr;
-@property(nonatomic,strong)NewsViewController *content;
 @property(nonatomic,strong)NSArray *titles;
 
 @end
@@ -21,40 +19,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [Titles getTitlesData];
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleNotificationByTitles:) name:GetTitlesDataNotification object:nil];
+    self.title=@"文明嘉兴";
     
-    _mutableArr=[NSMutableArray array];
-    //Titles
-    float navigationHeight=self.navigationController.navigationBar.frame.size.height;
-    
+    NSMutableArray *mutableArr=[NSMutableArray array];
+    self.titlesArr=@[@"文明播报",@"道德模范",@"文明创建",@"志愿服务",@"未成年人",@"区县传真",@"主题活动",@"我们的节日"];
     for (int i=0; i<self.titlesArr.count; i++) {
-        self.content=[[NewsViewController alloc]init];
-        self.content.title=self.titlesArr[i];
-        [self.mutableArr addObject:self.content];
+        NewsViewController *content=[self.storyboard instantiateViewControllerWithIdentifier:@"NewsView"];
+        content.title=self.titlesArr[i];
+        [mutableArr addObject:content];
     }
     
-    YSLContainerViewController *containerTitles=[[YSLContainerViewController alloc]initWithControllers:@[self.content] topBarHeight:navigationHeight parentViewController:self];
-    containerTitles.delegate=self;
-    containerTitles.menuItemTitleColor=[UIColor grayColor];
+    YSLContainerViewController *containerTitles=[[YSLContainerViewController alloc]initWithControllers:mutableArr topBarHeight:64 parentViewController:self];
+    
+    containerTitles.menuItemTitleColor=[UIColor blackColor];
     containerTitles.menuItemSelectedTitleColor=[UIColor redColor];
-    containerTitles.menuBackGroudColor=[UIColor whiteColor];
+    containerTitles.menuIndicatorColor=[UIColor redColor];
     [self.view addSubview:containerTitles.view];
 }
-- (void)containerViewItemIndex:(NSInteger)index currentController:(UIViewController *)controller{
-    NSLog(@"%ld",index);
-    
-    [controller viewWillAppear:YES];
-}
-
-#pragma mark 处理获取Banner数据时的通知
--(void)handleNotificationByTitles:(NSNotification *)object{
-    
-    if ([object.object isKindOfClass:[NSArray class]]) {
-        self.titlesArr=object.object;
-    }
-    NSLog(@"%@",self.titlesArr);
-}
-
 
 @end

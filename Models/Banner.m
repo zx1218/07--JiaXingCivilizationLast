@@ -21,7 +21,7 @@
     
     manager.requestSerializer=[AFJSONRequestSerializer serializer];
     [manager POST:HTTP_getHeaderData parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"网络请求成功");
+//        NSLog(@"网络请求成功");
         if ([responseObject[@"result"] isEqualToNumber:@0]) {
             //赋值数据给数组
             NSArray *bannerData=responseObject[@"data"];

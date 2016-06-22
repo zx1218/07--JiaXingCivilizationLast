@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *detailTitle;
+@property (weak, nonatomic) IBOutlet UILabel *detailTime;
+@property (weak, nonatomic) IBOutlet UILabel *detailSource;
+@property (weak, nonatomic) IBOutlet UIWebView *detailWebView;
 
 @end

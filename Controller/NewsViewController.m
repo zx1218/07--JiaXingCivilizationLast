@@ -8,11 +8,13 @@
 
 #import "NewsViewController.h"
 #import "NewsTableViewCell.h"
+#import "DetailsViewController.h"
 #import "News.h"
 #import "Banner.h"
 
 @interface NewsViewController ()<UITableViewDataSource,UITableViewDelegate,SDCycleScrollViewDelegate,UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *newsTableView;
+
 @property(nonatomic,strong)NSMutableArray *newsArr;
 @property(nonatomic,strong)NSArray *headerImageArr;
 @property(nonatomic,strong)UIPageControl *pageControl;
@@ -29,6 +31,7 @@ int pageNum;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+
     [Banner getBannerData];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleNotificationByBanner:) name:GetBannerDataNotification object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleNotificationByNews:) name:GetNewsDataNotification object:nil];
@@ -72,7 +75,6 @@ int pageNum;
 }
 //tableView行数
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSLog(@"%lu",(unsigned long)self.newsArr.count);
     return self.newsArr.count;
 }
 //绘制cell
@@ -112,9 +114,8 @@ int pageNum;
     
     return _cycle;
 }
-//-(void)categoryId:(int)sender{
-//    categoryId=sender;
-//    [self.newsTableView.mj_header beginRefreshing];
-//
-//}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    [self.navigationController pushViewController:[[DetailsViewController alloc]init] animated:YES];
+}
 @end

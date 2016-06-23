@@ -9,5 +9,19 @@
 #import <Foundation/Foundation.h>
 
 @interface Details : NSObject
+@property (nonatomic,strong) AFHTTPSessionManager * manager;
+@property (nonatomic,strong) NSNumber * newsId;
+@property (nonatomic,strong) NSString * titleNews;
+@property (nonatomic,strong) NSString * summary;
+@property (nonatomic,strong) NSString * source;
+@property (nonatomic,strong) NSString * image;
+@property (nonatomic,strong) NSString * browseNum;
+@property (nonatomic,strong) NSString * issuestime;
 
+@property (nonatomic,strong) NSString * categoryFk;
+@property (nonatomic,strong) NSString * content;
+@property (nonatomic,strong) NSString * link;
+
+-(void)getDetailsDataWithPageNum:(int)pageNum;
++(void)getDetailsDataWithPageNum:(int)pageNum;
 @end

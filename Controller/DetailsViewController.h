@@ -13,5 +13,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *detailTime;
 @property (weak, nonatomic) IBOutlet UILabel *detailSource;
 @property (weak, nonatomic) IBOutlet UIWebView *detailWebView;
+@property(nonatomic,strong)NSDictionary *params;
+@property (weak, nonatomic) IBOutlet UIScrollView *detailScroll;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *webHeight;
 
 @end

@@ -11,6 +11,8 @@
 #import "DetailsViewController.h"
 #import "News.h"
 #import "Banner.h"
+#import "Details.h"
+
 
 @interface NewsViewController ()<UITableViewDataSource,UITableViewDelegate,SDCycleScrollViewDelegate,UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *newsTableView;
@@ -22,7 +24,7 @@
 @property(nonatomic,strong)UIImageView *imageView;
 @property(nonatomic,strong)UILabel *label;
 @property(nonatomic,strong)SDCycleScrollView *cycle;
-
+@property(nonatomic,strong)NSMutableArray<Details *> *detailArr;
 @end
 
 @implementation NewsViewController
@@ -115,7 +117,15 @@ int pageNum;
     return _cycle;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
-    [self.navigationController pushViewController:[[DetailsViewController alloc]init] animated:YES];
+    Details *detail=self.detailArr[indexPath.row];
+    DetailsViewController *detailView=[self.storyboard instantiateViewControllerWithIdentifier:@"detail"];
+    int tempNum=(pageNum-1)*10+(int)indexPath.row;
+    [detailView setParams:@{
+                            @"newsId":detail.newsId,
+                            @"categoryFk":@1,
+                            @"pageNum":@(tempNum)
+                            }];
+    
+    [self.navigationController pushViewController:detailView animated:YES];
 }
 @end

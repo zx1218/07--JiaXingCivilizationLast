@@ -13,7 +13,6 @@
     MBProgressHUD *hud;
     UIView *vLoging;
 }
-@property(nonatomic,strong)NSDictionary *dict;
 @property (nonatomic,strong) AFHTTPSessionManager *manager;
 @end
 

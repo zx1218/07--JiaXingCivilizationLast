@@ -7,31 +7,37 @@
 //
 
 #import "CivilizationViewController.h"
-
+#import "TwoViewController.h"
+#import "NoticeViewController.h"
+#import "LinkViewController.h"
+#import "ShareViewController.h"
 @interface CivilizationViewController ()
-
+@property(nonatomic,strong)NSArray *titlesArr;
+@property(nonatomic,strong)NSArray *titles;
 @end
 
 @implementation CivilizationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
+    self.titlesArr=@[@"二维码",@"通知公告",@"友情链接",@"分享好友"];
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+    TwoViewController *twoView=[self.storyboard instantiateViewControllerWithIdentifier:@"twoViewController"];
+    twoView.title=self.titlesArr[0];
+    NoticeViewController *notice=[self.storyboard instantiateViewControllerWithIdentifier:@"noticeViewController"];
+    notice.title=self.titlesArr[1];
+    LinkViewController *link=[self.storyboard instantiateViewControllerWithIdentifier:@"linkViewController"];
+    link.title=self.titlesArr[2];
+    ShareViewController *share=[self.storyboard instantiateViewControllerWithIdentifier:@"shareViewController"];
+    share.title=self.titlesArr[3];
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    YSLContainerViewController *containerTitles=[[YSLContainerViewController alloc]initWithControllers:@[twoView,notice,link,share] topBarHeight:64 parentViewController:self];
+    
+    containerTitles.menuItemTitleColor=[UIColor blackColor];
+    containerTitles.menuItemSelectedTitleColor=[UIColor redColor];
+    containerTitles.menuIndicatorColor=[UIColor redColor];
+    [self.view addSubview:containerTitles.view];
 }
-*/
 
 @end

@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.titlesArr=@[@"二维码",@"通知公告",@"友情链接",@"分享好友"];
-
+//    self.view.backgroundColor=[UIColor colorWithRed:0.99 green:0.98 blue:0.90 alpha:1.00];
     TwoViewController *twoView=[self.storyboard instantiateViewControllerWithIdentifier:@"twoViewController"];
     twoView.title=self.titlesArr[0];
     NoticeViewController *notice=[self.storyboard instantiateViewControllerWithIdentifier:@"noticeViewController"];
@@ -31,9 +31,7 @@
     ShareViewController *share=[self.storyboard instantiateViewControllerWithIdentifier:@"shareViewController"];
     share.title=self.titlesArr[3];
 
-    
     YSLContainerViewController *containerTitles=[[YSLContainerViewController alloc]initWithControllers:@[twoView,notice,link,share] topBarHeight:64 parentViewController:self];
-    
     containerTitles.menuItemTitleColor=[UIColor blackColor];
     containerTitles.menuItemSelectedTitleColor=[UIColor redColor];
     containerTitles.menuIndicatorColor=[UIColor redColor];

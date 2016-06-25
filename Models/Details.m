@@ -9,29 +9,25 @@
 #import "Details.h"
 
 @implementation Details
-+(void)getDetailsDataWithPageNum:(int)pageNum{
-    return [[[self class]alloc]getDetailsDataWithPageNum:pageNum];
++(void)getDetailsDataWithDictionary:(NSDictionary *)dictionary{
+     [[[self class]alloc]getDetailsDataWithDictionary:dictionary];
 }
 
--(void)getDetailsDataWithPageNum:(int)pageNum{
-    AFHTTPSessionManager *manager=[AFHTTPSessionManager manager];
-    NSDictionary *dict=@{
-                         @"categoryId":@1,
-                         @"pageNum":@(pageNum)
-                         };
+-(void)getDetailsDataWithDictionary:(NSDictionary *)dictionary{
+    _set=[NSMutableSet setWithSet:self.manager.responseSerializer.acceptableContentTypes];
+    [_set addObject:@"text/html"];
     
+    AFHTTPSessionManager *manager=[AFHTTPSessionManager manager];
     manager.requestSerializer=[AFJSONRequestSerializer serializer];
-    [manager POST:HTTP_getDetails parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
+    
+    self.manager.responseSerializer.acceptableContentTypes=_set;
+
+    [manager POST:HTTP_getDetails parameters:dictionary progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if ([responseObject[@"result"] isEqualToNumber:@0]) {
             //赋值数据给数组
             NSArray *tempData=responseObject[@"data"];
-            [Details mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
-                return @{@"titleNews":@"title"};
-            }];
-            
-            NSArray *resultNews = [Details mj_objectArrayWithKeyValuesArray:tempData];
-            [[NSNotificationCenter defaultCenter]postNotificationName:GetDetailsDataNotification object:resultNews];
+
+            [[NSNotificationCenter defaultCenter]postNotificationName:GetDetailsDataNotification object:tempData];
             
         }else{
             NSLog(@"请求失败:%@",responseObject[@"message"]);
@@ -44,5 +40,13 @@
     }];
     
 }
-
+- (AFHTTPSessionManager *)manager
+{
+    if (_manager) {
+        return  _manager;
+    }
+    _manager = [AFHTTPSessionManager manager];
+    _manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    return _manager;
+}
 @end

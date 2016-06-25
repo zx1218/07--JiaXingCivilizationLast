@@ -9,4 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface NewsViewController : UIViewController
+-(void)setcategoryId:(int)categoryId;
 @end

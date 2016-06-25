@@ -22,6 +22,8 @@
 @property (nonatomic,strong) NSString * content;
 @property (nonatomic,strong) NSString * link;
 
--(void)getDetailsDataWithPageNum:(int)pageNum;
-+(void)getDetailsDataWithPageNum:(int)pageNum;
+@property(nonatomic,strong)NSMutableSet *set;
+
+-(void)getDetailsDataWithDictionary:(NSDictionary *)dictionary;
++(void)getDetailsDataWithDictionary:(NSDictionary *)dictionary;
 @end

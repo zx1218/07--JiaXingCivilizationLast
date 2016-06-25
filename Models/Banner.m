@@ -9,14 +9,14 @@
 #import "Banner.h"
 
 @implementation Banner
-+(void)getBannerData{
-    return [[[self class]alloc]getBannerData];
++(void)getBannerDataWithNumOfCategoryId:(int)num{
+    return [[[self class]alloc]getBannerDataWithNumOfCategoryId:(int)num];
 }
 
--(void)getBannerData{
+-(void)getBannerDataWithNumOfCategoryId:(int)num{
     AFHTTPSessionManager *manager=[AFHTTPSessionManager manager];
     NSDictionary *dict=@{
-                         @"categoryId":@1,
+                         @"categoryId":@(num)
                          };
     
     manager.requestSerializer=[AFJSONRequestSerializer serializer];

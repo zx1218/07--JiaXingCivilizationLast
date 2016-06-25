@@ -11,6 +11,6 @@
 @interface Banner : NSObject
 @property(nonatomic,strong)NSString *title;
 @property(nonatomic,strong)NSString *imageurl;
--(void)getBannerData;
-+(void)getBannerData;
+-(void)getBannerDataWithNumOfCategoryId:(int)num;
++(void)getBannerDataWithNumOfCategoryId:(int)num;
 @end

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ProfoundViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIWebView *proWebView;
 
 @end

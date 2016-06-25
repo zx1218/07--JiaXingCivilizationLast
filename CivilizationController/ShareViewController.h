@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ShareViewController : UIViewController
+- (IBAction)touchShare:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *shareButton;
 
 @end
